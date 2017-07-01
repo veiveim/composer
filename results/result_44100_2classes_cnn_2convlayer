@@ -1,0 +1,84 @@
+
+conv1, pool1:  (?, 256, 1, 64) (?, 128, 1, 64)
+conv2, pool2:  (?, 128, 1, 128) (?, 64, 1, 128)
+pool2_flat, dense, dropout:  (?, 8192) (?, 1024) (?, 1024)
+logits, onehot_labels:  (?, 2) (?, 2)
+{'loss': 1.059033, 'global_step': 20000, 'accuracy': 0.66666669}
+
+
+conv1, pool1:  (?, 256, 1, 128) (?, 128, 1, 128)
+conv2, pool2:  (?, 128, 1, 256) (?, 64, 1, 256)
+pool2_flat, dense, dropout:  (?, 16384) (?, 1024) (?, 1024)
+logits, onehot_labels:  (?, 2) (?, 2)
+INFO:tensorflow:Starting evaluation at 2017-06-29-11:54:53
+INFO:tensorflow:Restoring parameters from /tmp/composer_convnet_model/model.ckpt-23320
+INFO:tensorflow:Finished evaluation at 2017-06-29-11:54:53
+INFO:tensorflow:Saving dict for global step 23320: accuracy = 0.689394, global_step = 23320, loss = 1.04917
+{'loss': 1.0491699, 'global_step': 23320, 'accuracy': 0.68939394}
+
+
+
+conv1, pool1:  (?, 256, 1, 128) (?, 128, 1, 128)
+conv2, pool2:  (?, 128, 1, 256) (?, 64, 1, 256)
+conv3, pool3:  (?, 64, 1, 512) (?, 32, 1, 512)
+pool3_flat, dense, dropout:  (?, 16384) (?, 1024) (?, 1024)
+logits, onehot_labels:  (?, 2) (?, 2)
+INFO:tensorflow:Starting evaluation at 2017-06-29-13:46:54
+INFO:tensorflow:Restoring parameters from /tmp/composer_convnet_model_conv3/model.ckpt-20000
+INFO:tensorflow:Finished evaluation at 2017-06-29-13:46:54
+INFO:tensorflow:Saving dict for global step 20000: accuracy = 0.681818, global_step = 20000, loss = 0.91058
+{'loss': 0.9105798, 'global_step': 20000, 'accuracy': 0.68181819}
+
+
+
+conv1, pool1:  (?, 256, 1, 128) (?, 128, 1, 128)
+conv2, pool2:  (?, 128, 1, 256) (?, 64, 1, 256)
+conv3, pool3:  (?, 64, 1, 512) (?, 32, 1, 512)
+pool3_flat, dense, dropout:  (?, 16384) (?, 1024) (?, 1024)
+logits, onehot_labels:  (?, 4) (?, 4)
+INFO:tensorflow:Starting evaluation at 2017-06-29-15:43:02
+INFO:tensorflow:Restoring parameters from /tmp/composer_convnet_model_conv3_class4/model.ckpt-20002
+INFO:tensorflow:Finished evaluation at 2017-06-29-15:43:03
+INFO:tensorflow:Saving dict for global step 20002: accuracy = 0.460938, global_step = 20002, loss = 1.89035
+{'loss': 1.8903503, 'global_step': 20002, 'accuracy': 0.4609375}
+
+
+conv1, pool1:  (?, 256, 3, 128) (?, 128, 2, 128)
+conv2, pool2:  (?, 128, 2, 256) (?, 64, 1, 256)
+conv3, pool3:  (?, 64, 1, 512) (?, 32, 1, 512)
+pool4_flat, dense, dropout:  (?, 16384) (?, 1024) (?, 1024)
+logits, onehot_labels:  (?, 2) (?, 2)
+INFO:tensorflow:Starting evaluation at 2017-06-29-19:20:38
+INFO:tensorflow:Restoring parameters from /tmp/composer_convnet_model_conv3_class2_256_3_1/model.ckpt-20000
+INFO:tensorflow:Finished evaluation at 2017-06-29-19:20:39
+INFO:tensorflow:Saving dict for global step 20000: accuracy = 0.568182, global_step = 20000, loss = 0.652201
+{'loss': 0.65220088, 'global_step': 20000, 'accuracy': 0.56818181}
+
+
+
+conv1, pool1:  (?, 256, 1, 256) (?, 128, 1, 256)
+conv2, pool2:  (?, 128, 1, 512) (?, 64, 1, 512)
+pool3_flat, dense, dropout:  (?, 32768) (?, 1024) (?, 1024)
+logits, onehot_labels:  (?, 2) (?, 2)
+INFO:tensorflow:Starting evaluation at 2017-06-29-17:01:11
+INFO:tensorflow:Restoring parameters from /tmp/composer_convnet_model_conv2_class2/model.ckpt-20000
+INFO:tensorflow:Finished evaluation at 2017-06-29-17:01:11
+INFO:tensorflow:Saving dict for global step 20000: accuracy = 0.651515, global_step = 20000, loss = 1.07321
+{'loss': 1.0732132, 'global_step': 20000, 'accuracy': 0.65151513}
+
+
+
+conv1, pool1:  (?, 256, 1, 128) (?, 128, 1, 128)
+conv2, pool2:  (?, 128, 1, 256) (?, 64, 1, 256)
+conv3, pool3:  (?, 64, 1, 512) (?, 32, 1, 512)
+pool3_flat, dense, dropout:  (?, 16384) (?, 1024) (?, 1024)
+logits, onehot_labels:  (?, 4) (?, 4)
+{'loss': 1.9330797, 'global_step': 20000, 'accuracy': 0.453125}
+
+
+conv1, pool1:  (?, 256, 1, 128) (?, 128, 1, 128)
+conv2, pool2:  (?, 128, 1, 256) (?, 64, 1, 256)
+conv3, pool3:  (?, 64, 1, 512) (?, 32, 1, 512)
+pool3_flat, dense, dropout:  (?, 16384) (?, 1024) (?, 1024)
+logits, onehot_labels:  (?, 4) (?, 4)
+{'loss': 1.9330797, 'global_step': 20000, 'accuracy': 0.453125}
